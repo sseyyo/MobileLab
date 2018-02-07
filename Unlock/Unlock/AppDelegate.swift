@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Unlock
 //
-//  Created by KimSe young on 2/5/18.
+//  Created by Kim Seyoung on 2/5/18.
 //  Copyright © 2018 SeyoungKim. All rights reserved.
 //
 
