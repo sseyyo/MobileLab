@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YesNo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it ok to skip the class today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC9-Hk-Bio">
+                                <rect key="frame" x="71" y="105" width="233" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yest0.png" translatesAutoresizingMaskIntoConstraints="NO" id="X1T-MC-iym">
+                                <rect key="frame" x="-10" y="248" width="224" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xgp-iQ-F2r">
+                                <rect key="frame" x="161" y="248" width="224" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8H-L6-D57">
+                                <rect key="frame" x="28" y="288" width="145" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="RsN-gb-Ld1"/>
+                                    <constraint firstAttribute="width" constant="145" id="gE9-Jd-YIg"/>
+                                </constraints>
+                                <state key="normal" title="yes">
+                                    <color key="titleColor" red="0.34779848372774957" green="1" blue="0.64217649678422783" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZj-PB-wEp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrQ-CD-UTH">
+                                <rect key="frame" x="201" y="288" width="144" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="EX0-PT-yJZ"/>
+                                    <constraint firstAttribute="width" constant="144" id="JqS-3e-PWM"/>
+                                </constraints>
+                                <state key="normal" title="no">
+                                    <color key="titleColor" red="0.90253255708019975" green="0.10119877907579589" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PwE-jG-SSD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YC9-Hk-Bio" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="1tS-1d-XJI"/>
+                            <constraint firstItem="MrQ-CD-UTH" firstAttribute="top" secondItem="YC9-Hk-Bio" secondAttribute="bottom" constant="162" id="Gnx-4G-dGW"/>
+                            <constraint firstItem="YC9-Hk-Bio" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="IVJ-Ko-5hQ"/>
+                            <constraint firstItem="a8H-L6-D57" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cVq-dX-S1E"/>
+                            <constraint firstItem="a8H-L6-D57" firstAttribute="top" secondItem="YC9-Hk-Bio" secondAttribute="bottom" constant="162" id="qaI-hH-8Pi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MrQ-CD-UTH" secondAttribute="trailing" constant="38" id="xCu-Xc-rD5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="noBtn" destination="Xgp-iQ-F2r" id="deu-zX-hmK"/>
+                        <outlet property="yesBtn" destination="X1T-MC-iym" id="QMu-yU-iRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no0.png" width="700" height="1020"/>
+        <image name="yest0.png" width="700" height="1020"/>
+    </resources>
+</document>
